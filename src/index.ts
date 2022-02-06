@@ -1,4 +1,6 @@
-// Start coding here
-export const demoFn = (a: number, b: number): number => a + b;
+import app from "./app";
+import dbConnection from './config/config';
 
-console.log(demoFn(1,2));
+dbConnection(`${process.env.MONGO_URI}`);
+
+app.listen(process.env.PORT, () => console.log(`Server is running on port ${process.env.PORT}`));
