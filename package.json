@@ -5,6 +5,7 @@
   "license": "MIT",
   "type": "commonjs",
   "scripts": {
+    "build": "tsc",
     "start": "node src/index.js",
     "start:dev": "ts-node-dev src/index.ts",
     "test": "jest --config ./jest.config.js",
